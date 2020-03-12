@@ -66,7 +66,7 @@ class App extends Component {
               <Route exact path="/" component={SearchContainer} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
-              <PrivateRoute exact path="/podcast" component={PODCAST} />
+              <PrivateRoute exact path="/podcast" component={SearchContainer} />
               <PrivateRoute exact path="/omdb" component={OMDBComponent} />
               <Route
                 component={localStorage.jwtTokenTeams ? Podcast : NotFound}
