@@ -1,0 +1,49 @@
+@import url(//fonts.googleapis.com/css?family=Roboto:700&display=swap);
+
+
+.container{
+    margin-top: 100px;
+   
+   
+}
+
+
+.introH2{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 60px;
+    
+    
+}
+
+h4{
+    
+    margin-top: 80px;
+    color: #43E97B;
+   
+}
+
+.introLogo{
+   
+    margin-top: 30px;
+    margin-left: 400px;
+
+}
+
+.loginLink{
+    margin-left: 430px;
+    position: fixed;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+}
+.signupLink{
+    position: relative;
+    margin-left: 530px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+
+}

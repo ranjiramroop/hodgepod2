@@ -1,0 +1,23 @@
+main {
+    width: 100%;
+    text-align: right;
+  } 
+  
+#upvote{
+    background: none;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+#downvote{
+    background: none;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.voteInfo{
+    display: inline-block;
+
+}
