@@ -23,6 +23,7 @@ import PODCAST from "./components/PODCAST";
 import HeaderMain from "./components/HeaderMain";
 import SearchContainer from "./components/SearchContainer";
 import TopNav from "./components/TopNav";
+import "./components/main.css";
 
 // Style
 import "./App.scss";
