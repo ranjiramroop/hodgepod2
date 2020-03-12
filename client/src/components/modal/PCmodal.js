@@ -1,6 +1,8 @@
 import React from 'react';
 import Modal from 'react-responsive-modal';
 import PCDetail from '../PCDetail';
+import "./modal.css";
+
 export default class App extends React.Component {
   constructor(props){
     super(props)
@@ -24,7 +26,7 @@ export default class App extends React.Component {
     console.log(podcast, "here with podcast")
     return (
       <div>
-        <button onClick={this.onOpenModal}> More Info</button>
+        <button class ="modalbtn" onClick={this.onOpenModal}> More Info</button>
         <Modal open={open} onClose={this.onCloseModal} center>
           <PCDetail
            Title={podcast.title_original} 
@@ -32,7 +34,7 @@ export default class App extends React.Component {
            Link={podcast.link} 
           />
         </Modal>
-        <button> Save </button>
+        <button class ="modalbtn" > Save </button>
       </div>
     );
   }

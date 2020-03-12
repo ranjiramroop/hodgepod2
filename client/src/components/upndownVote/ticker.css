@@ -4,17 +4,23 @@ main {
   } 
   
 #upvote{
-    background: none;
+    background: white;
+    color: darkgreen;
     border: none;
     font-size: 16px;
     border-radius: 4px;
+    margin: 2px;
+    border: 2px solid #444;
 }
 
 #downvote{
-    background: none;
+    background: white;
+    color: darkgreen;
     border: none;
     font-size: 16px;
     border-radius: 4px;
+    margin: 2px;
+    border: 2px solid #444;
 }
 
 .voteInfo{

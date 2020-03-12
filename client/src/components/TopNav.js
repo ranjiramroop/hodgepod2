@@ -93,15 +93,14 @@ class TopNav extends Component {
             </li>
           </ul>
         ) : (
-          <ul className="right-top">
-            <li>
+          <div className="right-top">
               <div className="email">
                 <p>
                   <a href="/login">Sign in</a>
                 </p>
               </div>
-            </li>
-          </ul>
+
+          </div>
         )}
       </nav>
     );

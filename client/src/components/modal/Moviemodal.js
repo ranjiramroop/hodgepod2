@@ -1,7 +1,8 @@
 import React from 'react';
 import Modal from 'react-responsive-modal';
 import MovieDetail from '../OMDB/MovieDetail';
-import omdbapi from "../../utils/OMDBAPI"
+import omdbapi from "../../utils/OMDBAPI";
+import "./modal.css";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -41,7 +42,7 @@ export default class App extends React.Component {
     console.log(movie, "this is our movie")
     return (
       <div>
-        <button onClick={this.onOpenModal}>More info</button>
+        <button class ="modalbtn" onClick={this.onOpenModal}>More info</button>
         <Modal open={open} onClose={this.onCloseModal} center>
         <MovieDetail
                   title={movie.Title}
@@ -51,7 +52,7 @@ export default class App extends React.Component {
                 />
         </Modal>
         {/* <button onClick={() => console.log(this.state.searchData)}>Test test</button> */}
-        <button> Save </button>
+        <button class ="modalbtn" > Save </button>
       </div>
     );
   }
