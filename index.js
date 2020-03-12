@@ -16,6 +16,8 @@ app.use(
   })
 );
 
+app.use(logger("dev"));
+
 app.use(bodyParser.json());
 
 // DB Config
