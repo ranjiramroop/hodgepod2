@@ -55,7 +55,7 @@ class Register extends Component {
 
     return (
       <div className="base-wrapper">
-        <div className="auth-header">SmartHealth Registration</div>
+        <div className="auth-header">HodgePod Registration</div>
         <form className="auth-form" noValidate onSubmit={this.onSubmit}>
           <div className="auth-group">
             <div className="auth-label">First Name</div>
@@ -115,9 +115,12 @@ class Register extends Component {
             </button>
           </div>
           <div className="bottom-group">
-            <p>Already have an account? <Link to="/" className="link">
-              Sign in
-            </Link> </p>
+            <p>
+              Already have an account?{" "}
+              <Link to="/" className="link">
+                Sign in
+              </Link>{" "}
+            </p>
           </div>
         </form>
       </div>
@@ -136,7 +139,4 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 
-export default connect(
-  mapStateToProps,
-  { registerUser }
-)(withRouter(Register));
+export default connect(mapStateToProps, { registerUser })(withRouter(Register));
