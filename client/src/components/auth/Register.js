@@ -55,7 +55,7 @@ class Register extends Component {
 
     return (
       <div className="base-wrapper">
-        <div className="auth-header">SmartHealth Registration</div>
+        <div className="auth-header">Hodgepod Registration</div>
         <form className="auth-form" noValidate onSubmit={this.onSubmit}>
           <div className="auth-group">
             <div className="auth-label">First Name</div>

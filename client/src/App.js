@@ -24,10 +24,78 @@ import HeaderMain from "./components/HeaderMain";
 import SearchContainer from "./components/SearchContainer";
 import TopNav from "./components/TopNav";
 import "./components/main.css";
+import Slider from "./components/MovieSlider";
 
 // Style
 import "./App.scss";
-
+const movies = [
+  {
+    id: 1,
+    image: '/images/slide7.jpg',
+    imageBg: '/images/slide1b.webp',
+    title: 'parasite'
+  },
+  {
+    id: 2,
+    image: '/images/slide8.jpg',
+    imageBg: '/images/slide2b.webp',
+    title: 'Uncut Gems'
+  },
+  {
+    id: 3,
+    image: '/images/slide9.jpg',
+    imageBg: '/images/slide3b.webp',
+    title: 'Queen & Slim',
+  },
+  {
+    id: 4,
+    image: '/images/slide10.jpg',
+    imageBg: '/images/slide4b.webp',
+    title: 'Sex education'
+  },
+  {
+    id: 5,
+    image: '/images/slide11.jpg',
+    imageBg: '/images/slide5b.webp',
+    title: 'Elite'
+  },
+  {
+    id: 6,
+    image: '/images/slide12.jpg',
+    imageBg: '/images/slide6b.webp',
+    title: 'Black mirror'
+  },
+  {
+    id: 7,
+    image: '/images/slide13.jpg',
+    imageBg: '/images/slide6b.webp',
+    title: 'Black mirror'
+  },
+  {
+    id: 8,
+    image: '/images/slide14.jpg',
+    imageBg: '/images/slide6b.webp',
+    title: 'Black mirror'
+  },
+  {
+    id: 9,
+    image: '/images/slide15.jpg',
+    imageBg: '/images/slide6b.webp',
+    title: 'Black mirror'
+  },
+  {
+    id: 10,
+    image: '/images/slide16.jpg',
+    imageBg: '/images/slide6b.webp',
+    title: 'Black mirror'
+  },
+  {
+    id: 11,
+    image: '/images/slide17.jpg',
+    imageBg: '/images/slide6b.webp',
+    title: 'Black mirror'
+  }
+];
 // Check for token to keep user logged in
 const loggedIn = () => {
   console.log("check logged in");
@@ -53,6 +121,8 @@ const loggedIn = () => {
   return false;
 };
 
+
+
 class App extends Component {
   render() {
     return (
@@ -72,6 +142,14 @@ class App extends Component {
                 component={localStorage.jwtTokenTeams ? Podcast : NotFound}
               />
             </Switch>
+          </div>
+          <Slider>
+          {movies.map(movie => (
+            <Slider.Item movie={movie} key={movie.id}>item1</Slider.Item>
+          ))}
+        </Slider>
+          <div>
+          
           </div>
         </Router>
       </Provider>
