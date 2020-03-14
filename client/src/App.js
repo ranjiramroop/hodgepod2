@@ -143,6 +143,7 @@ class App extends Component {
               />
             </Switch>
           </div>
+          <p className= "sliderText">top movies to stream</p>
           <Slider>
           {movies.map(movie => (
             <Slider.Item movie={movie} key={movie.id}>item1</Slider.Item>
