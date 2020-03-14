@@ -10,8 +10,8 @@ function PCDetail(props) {
         src={props.podcast}
         style={{ margin: "0 auto" }}
       />
-      <h3>Title: {props.Title}</h3>
-      <h3>Description: {props.Description}</h3>
+      <h3 className="moreinfoHeading">Title: {props.Title}</h3>
+      <h3 className="moreinfoHeading">Description: {props.Description}</h3>
       <a href={props.Link}> <h3>Go to website</h3></a>
     </div>
   );

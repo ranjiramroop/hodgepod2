@@ -94,8 +94,47 @@ const movies = [
     image: '/images/slide17.jpg',
     imageBg: '/images/slide6b.webp',
     title: 'Black mirror'
+  },
+  {
+    id: 12,
+    image: '/images/slide18.jpg',
+    imageBg: '/images/slide6b.webp',
+    title: 'Black mirror'
   }
 ];
+
+const ranji = [
+  {
+    id: 1,
+    image: '/images/slide19.jpg',
+    imageBg: '/images/slide1b.webp',
+    title: 'parasite'
+  },
+  {
+    id: 2,
+    image: '/images/slide20.jpg',
+    imageBg: '/images/slide2b.webp',
+    title: 'Uncut Gems'
+  },
+  {
+    id: 3,
+    image: '/images/slide21.jpg',
+    imageBg: '/images/slide2b.webp',
+    title: 'Uncut Gems'
+  },
+  {
+    id: 4,
+    image: '/images/slide22.jpg',
+    imageBg: '/images/slide2b.webp',
+    title: 'Uncut Gems'
+  },
+  {
+    id: 5,
+    image: '/images/slide23.jpg',
+    imageBg: '/images/slide2b.webp',
+    title: 'Uncut Gems'
+  },
+]
 // Check for token to keep user logged in
 const loggedIn = () => {
   console.log("check logged in");
@@ -146,6 +185,12 @@ class App extends Component {
           <p className= "sliderText">top movies to stream</p>
           <Slider>
           {movies.map(movie => (
+            <Slider.Item movie={movie} key={movie.id}>item1</Slider.Item>
+          ))}
+        </Slider>
+        <p className= "sliderText"> Ranji's List</p>
+        <Slider>
+          {ranji.map(movie => (
             <Slider.Item movie={movie} key={movie.id}>item1</Slider.Item>
           ))}
         </Slider>

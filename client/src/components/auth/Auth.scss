@@ -94,7 +94,7 @@
   height: 40px;
   margin-top: 1rem;
   color: #ffffff;
-  background-color: $primaryOrange;
+  background-color: green;
   border-color: $formBtnColor;
   border-radius: 4px;
   width: 100%;
@@ -103,7 +103,7 @@
   transition: all 0.25s ease 0s;
 
   &:hover {
-    background-color: $formBtnColor;
+    background-color: light green($color: #abd08b);
     border-color: $lightGray;
     transform: translateY(-2.5px);
     cursor: pointer;
@@ -119,7 +119,7 @@
 
 .link {
   text-decoration: underline;
-  color: $primaryOrange;
+  color:  #063c03;
   font-family: $code;
   transition: all 0.25s ease 0s;
   padding: 0.25rem;
